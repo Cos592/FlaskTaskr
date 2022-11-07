@@ -1,0 +1,15 @@
+{% extends '_base.html' %}
+{% block content %}
+
+<h1> Welcome </h1>
+<h3> Please Login. </h3>
+
+<form method="post" action="/">
+    <span> Username: <input type="text" name="username" value="{{ request.form.username }}"></span>
+    <span> Password: <input type="text" name="password" value="{{ request.form.password }}"></span>
+    <input type="submit" value="Login">
+</form>
+
+<p><em>admin admin </em></p>
+
+{% endblock content %}
